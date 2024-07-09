@@ -1,7 +1,7 @@
 from typing import List
 
 class Solution:
-  def solution(self, nums: List[int], target: int) -> List[int]:
+  def solution(nums: List[int], target: int) -> List[int]:
     hashmap = {} # number, index
 
     for i, n in enumerate(nums):
@@ -11,7 +11,3 @@ class Solution:
         return [i, index]
       else:
         hashmap[n] = i
-
-# parse testcases.txt
-
-# run Solution.solution on them
